@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 商品信息区域 */
+#content-box{
+    width: 1000px;
+    margin: 30px auto 0 auto;
+}
+
+#commodity-list-title{
+    height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid red;
+}
+#commodity-list-title span{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+/* 添加商品按钮 */
+#add-commodity{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-radius: 2px;
+    background-size: 19px;
+    background-position-x: 10px;
+    background-color: #3366FF;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-image: url('../images/add-icon.png');
+}
+
+#add-commodity:hover{
+    background-color: #FF0036;
+}
+
+
+/* 商品列表item */
+#commodity-list-box{
+    width: 962px;
+    margin: 30px auto 0 auto;
+}
+
+/* 商品项 */
+.commodity-item{
+    float: left;
+    width: 210px;
+    margin: 10px;
+    height: 326px;
+    cursor: pointer;
+    padding: 4px 4px 0;
+    border: 1px solid #EEE;
+}
+.commodity-item:hover{
+    border: 1px solid #FF0036;
+}
+
+/* 商品图片 */
+.commodity-img{
+    width: 210px;
+    height: 210px;
+}
+.commodity-img img{
+    width: 210px;
+}
+
+/* 商品价格 */
+.commodity-price{
+    width: 210px;
+    height: 30px;
+    margin: 5px 0;
+    cursor: text;
+}
+.commodity-price a{
+    font-size: 14px;
+    color: #FF0036;
+}
+.commodity-price span{
+    font-size: 20px;
+    color: #FF0036;
+}
+
+/* 商品名称 */
+.commodity-name{
+    width: 210px;
+    height: 30px;
+}
+
+.commodity-name a{
+    width: 190px;
+    color: #000;
+    display: block;
+    padding: 0 5px;
+    font-size: 13px;
+    overflow: hidden;
+    line-height: 30px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.commodity-name a:hover{
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+/* 操作按钮 */
+.commodity-operate{
+    width: 210px;
+    height: 35px;
+    margin:  5px 0;
+}
+
+.commodity-operate button{
+    width: 60px;
+    height: 24px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 13px;
+    border-radius: 2px;
+    padding-bottom: 3px;
+}
+.commodity-operate button:hover{
+    opacity: 0.8;
+}
+
+.commodity-edit{
+    float: left;
+    background-color: #3366CC;
+}
+
+
+.commodity-delete{
+    float: right;
+    background-color: #FF0036;
+}
+
+
+/* 分页 */
+#pagination{
+    text-align: center;
+}
+
+#pagination ul{
+    width: 1000px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+#pagination ul li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+#pagination ul li:hover{
+    color: #3399CC;
+    text-shadow: 0px 1px 2px #3399CC;
+    -moz-text-shadow: 0px 1px 2px #3399CC;
+    -webkit-text-shadow: 0px 1px 2px #3399CC;
+}
+#pagination ul li.pag-selected{
+    color: #3399CC;
+    text-shadow: 0px 1px 2px #3399CC;
+    -moz-text-shadow: 0px 1px 2px #3399CC;
+    -webkit-text-shadow: 0px 1px 2px #3399CC;
+}
+
+#pagination ul li.pag-isable{
+    color: #CCC;
+}
+
+/* 清除浮动 */
+.clear-both-box{
+    clear: both;
+}

@@ -1,0 +1,129 @@
+#add-commodity-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 204, 204, 0.6);
+}
+
+#adc-input-box{
+    width: 600px;
+    height: 600px;
+    border-radius: 2px;
+    background-color: #FFF;
+    margin: 120px auto 0 auto;
+    /* 边框阴影 */
+    box-shadow: 0px 0px 10px #555555;
+    -moz-box-shadow: 0px 0px 10px #555555;
+    -webkit-box-shadow: 0px 0px 10px #555555;
+}
+
+/* 标题信息 */
+.adc-title span{
+    height: 30px;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+}
+.adc-title div{
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: rgba(51, 204, 204, 0.4);
+}
+
+.adc-title div a{
+    font-weight: bold;
+}
+
+#adc-input{
+    width: 400px;
+    height: 430px;
+    padding: 0 60px;
+    border: 1px solid #CCC;
+    margin: 30px auto 0 auto;
+}
+
+.adc-input-item{
+    height: 33px;
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+
+/* 商品类别 */
+#adc-sort{
+    width: 79%;
+    height: 28px;
+}
+
+.adc-input-item input{
+    position: relative;
+    bottom: 2px;
+    width: 74%;
+    height: 25px;
+    padding: 0 10px;
+}
+/* 去除number箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.adc-commodity-introduction{
+    font-size: 14px;
+}
+.adc-commodity-introduction textarea{
+    width: 370px;
+    resize: none;
+    height: 50px;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* 添加按钮 */
+.adc-add-button{
+    margin-top: 25px;
+    text-align: right;
+}
+.adc-add-button button{
+    width: 90px;
+    height: 28px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #3366CC;
+}
+.adc-add-button button:hover{
+    background-color: #FF0000;
+}
+
+/* 关闭按钮 */
+.adc-close-button{
+    position: relative;
+    left: 468px;
+    bottom: 555px;
+}
+.adc-close-button button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('../images/adc-close-icon.png');
+}

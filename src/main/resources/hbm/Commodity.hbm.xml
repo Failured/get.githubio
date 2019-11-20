@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<!-- 建立实体类与表的映射 -->
+	<class name="online.shixun.project.model.Commodity" table="c_commodity">
+		<!-- 主键 -->
+		<id name="id" column="commodity_id">
+			<!-- 主键生成策略 -->
+			<generator class="native"/>
+		</id>
+		
+		
+		<!-- 其它属性 -->
+		<!-- 商品名称 -->
+		<property name="name">
+			<column name="name" length="100" not-null="true" unique="true"/>
+		</property>
+		<!-- 商品价格 -->
+		<property name="price" not-null="true"/>
+		<!-- 商品图片路径 -->
+		<property name="imgPath">
+			<column name="img_path"/>
+		</property>
+		<!-- 成交量 -->
+		<property name="volume" not-null="true"/>
+		<!-- 库存 -->
+		<property name="stock" not-null="true"/>
+		<!-- 商品简介 -->
+		<property name="introduction"/>
+		<!-- 点击量 -->
+		<property name="clickVolume" not-null="true"/>
+		<!-- 商品是否有效 -->
+		<property name="effective" not-null="true"/>
+		
+		<!-- 分类：多对一 -->
+		<many-to-one name="sort" column="sort_id" class="online.shixun.project.model.Sort" lazy="false"/>
+	</class>
+</hibernate-mapping>

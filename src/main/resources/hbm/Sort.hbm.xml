@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- 建立实体类与表的映射 -->
+	<class name="online.shixun.project.model.Sort" table="c_sort">
+		<!-- 主键 -->
+		<id name="id" column="sort_id">
+			<!-- 主键生成策略 -->
+			<generator class="native"/>
+		</id>
+		
+		
+		<!-- 其它属性 -->
+		<!-- 分类名称 -->
+		<property name="name">
+			<column name="name" length="5" not-null="true" unique="true"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
